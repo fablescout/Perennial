@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Perennial</title>
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+
+  <body>
+
+  <div id="controls">
+  
+    <img src = "perennial.png" id = "logo">
+  
+    <div id= "submitted">0 scenes created</div>
+
+    <p id = "title1">Select a Video:</p>
+    <input type="file" accept="video/*"/ id="video">
+
+    <br>
+
+    <p id = "title2">Add Audio Tracks:</p>
+    <input type="file" accept="audio/*"/ id="audio" multiple>
+
+    <button id = "addAud" onclick="makeArray();">Add Audio</button><br>
+    <button id = "submit" onclick="makeObj();">Create</button><br>
+    <button id = "play" onclick="playOnClick();">Play</button>
+    <button id = "save" onclick="save();">Save</button><br>
+    <form>
+    <select id="loadList">
+    </select>
+    </form>
+    <button id = "load" onclick="load();">Load</button>
+    <button id = "play2" onclick="playOnClick();">Play</button>
+    <div id= "errors"></div>
+    <div id= "recents"></div>
+
+  </div>
+
+    <video id = "myVid" width="100%" autoplay>
+    <video id="myAud" autoplay>
+    <script src="./perennial.js"></script>
+
+  </body>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+
+</html>

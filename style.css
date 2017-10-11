@@ -1,0 +1,159 @@
+input[type=file] {
+  position: relative;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+  top:5px;
+  left: 170px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  width: 0;
+  color: black !important;
+}
+
+/* "x::-webkit-file-upload-button" forces the rules to only apply to browsers that support this pseudo-element */
+x::-webkit-file-upload-button, input[type=file]:after {
+  border-radius: 15px 50px;
+  color: black !important;
+  content: 'Browse Files';
+  display: inline-block;
+  top: -5px;
+  margin-left:-170px;
+  padding: 6px 6px 6px 6px !important; 
+  position: relative;
+  -webkit-appearance: button;
+}
+
+#myVid{
+  display:none;
+}
+
+div{
+display: inline-block;
+white-space: nowrap;
+}
+
+button{
+ color: black !important;
+ padding: 6px 6px 6px 6px !important; 
+}
+
+.smalltalk{
+position: absolute;
+top:400px; left: 350px;
+}
+
+p{
+  font-size: 25px;
+}
+
+#controls{
+margin-left: 35px;
+margin-top: 20px;
+}
+
+#logo{
+position: absolute;
+width: 250px;
+margin-left: 390px;
+margin-top: 150px;
+z-index: -1;
+}
+
+#addAud{
+position: absolute;
+top:315px;
+}
+
+#submit{
+position: absolute;
+left: 150px;
+top:315px;
+}
+
+#play{
+position: absolute;
+left: 220px;
+top:315px;
+}
+
+#errors{
+position: absolute;
+top:345px;
+}
+
+#submitted{
+position: relative;
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 30px;
+}
+
+#save{
+position: absolute;
+top:370px; left: 350px;
+}
+
+#load{
+  position: absolute;
+  top:410px;
+}
+
+#play2{
+  position: absolute;
+  top:410px;
+  left:100px;
+}
+
+select#loadList {
+   position: absolute;
+   top:360px;
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), 
+   -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 300px;
+}
+
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+img#bg { 
+    opacity: 0.9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+}
+
+

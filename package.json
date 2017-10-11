@@ -1,0 +1,29 @@
+{
+  "name": "Perennial",
+  "version": "1.0.0",
+  "description": "Variable Audio Moviemaker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/roldyclark/Perennial.git",
+  "keywords": [
+    "Electron",
+    "Variable",
+    "Video",
+    "Audio",
+    "Moviemaker",
+    "Movie"
+  ],
+  "author": "Harold Herskowitz",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-packager": "^9.1.0"
+  },
+   "dependencies": {
+    "electron-disable-file-drop": "^1.0.1",
+    "electron-json-storage": "^2.1.0",
+    "electron-storage": "^1.0.7"
+  }
+}
