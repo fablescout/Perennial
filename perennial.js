@@ -11,7 +11,7 @@ var audname;
 var x = document.getElementById('submitted').innerHTML;
 
 /*
-document.getElementById('buttonID').style.display is called in many functions to update the display.
+document.getElementById('buttonID').style.display is called in many functions to show and hide buttons.
 */
 
 document.getElementById('audio').style.display = 'block';
